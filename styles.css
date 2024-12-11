@@ -288,3 +288,57 @@ header {
   width: 100%;
   height: auto;
 }
+
+/* APP SECTION */
+
+.app-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 32px 80px 64px;
+  gap: 24px;
+  border-radius: 32px 32px 0px 0px;
+}
+
+.app-section .info-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  background-color: #3c0c60;
+  border-radius: 24px;
+}
+
+.app-section .title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  color: var(--primary-color);
+}
+
+.app-section .title-box h1 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+
+.app-section .title-box p {
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
