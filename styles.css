@@ -1,16 +1,125 @@
 * {
   margin: 0 auto;
-  padding: 0;
+  padding: 0px;
   box-sizing: border-box;
 }
 
 :root {
   --primary-color: #eae8e4;
   --secondary-color: #2d2d2d;
-  --font-family: "HelveticaNeue", sans-serif;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
   font-family: var(--font-family);
   background-color: var(--primary-color);
+}
+
+.hero-lp {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 0px 0px 32px 32px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height: 480px;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px 0px 24px 80px;
+  margin: 0;
+  flex: 1 1 63%;
+}
+
+header {
+  margin-left: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  list-style: none;
+}
+
+.categories li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.56px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 80px;
+  gap: 8px;
+  flex: 1;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 75%;
+}
+
+.hero-text h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56.88px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+}
+
+.hero-text p {
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 27.02px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+}
+
+.scroll {
+  flex: 1 1 25%;
+}
+
+.image {
+  position: relative;
+  margin: 0;
+  flex: 1 1 37%;
+}
+.image .purple-logo {
+  position: absolute;
+  z-index: 1;
+}
+
+.image .pink-logo {
+  position: absolute;
+  z-index: 2;
+}
+
+.products {
 }
