@@ -342,3 +342,49 @@ header {
   padding: 0px;
   gap: 8px;
 }
+
+/* PRODUCTS2 SECTION */
+
+.products2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 80px;
+  gap: 40px;
+  color: var(--secondary-color);
+}
+.products2 h1 {
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+
+.frame3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  padding: 0px;
+  gap: 24px;
+}
+.frame3 div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 40px;
+  box-sizing: border-box;
+  background: #dfdcd5;
+  border: 1px solid #7d26c9;
+  backdrop-filter: blur(8px);
+  border-radius: 32px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #7d26c9;
+}
