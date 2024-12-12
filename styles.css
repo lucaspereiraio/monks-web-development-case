@@ -1,5 +1,5 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0px;
   box-sizing: border-box;
 }
@@ -38,10 +38,6 @@ body {
   padding: 24px 0px 24px 80px;
   margin: 0;
   flex: 1 1 63%;
-}
-
-header {
-  margin-left: 0;
 }
 
 .navbar {
@@ -90,7 +86,7 @@ header {
 }
 
 .hero-text h1 {
-  font-weight: bolder;
+  font-weight: 400;
   font-size: 48px;
   line-height: 56.88px;
   letter-spacing: 0.02em;
@@ -100,7 +96,7 @@ header {
 }
 
 .hero-text p {
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 24px;
   line-height: 27.02px;
   letter-spacing: 0.02em;
@@ -144,23 +140,22 @@ header {
   align-items: flex-start;
   padding: 0px;
   gap: 8px;
-  margin-left: 0;
+  width: 100%;
 }
 
 .products .title-box h1 {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 46.92px;
   letter-spacing: 0.02em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  margin-left: 0;
 }
 
 .products .title-box p {
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 28.27px;
   letter-spacing: 0.02em;
   text-align: left;
@@ -203,15 +198,16 @@ header {
 }
 
 .card-title {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 24px;
   line-height: 36px;
   flex-grow: 1;
   margin-left: 0;
+  width: 100%;
 }
 
 .card-description {
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   flex-grow: 1;
@@ -248,7 +244,7 @@ header {
 
 .main-picture .title-box h1 {
   text-align: left;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
@@ -258,7 +254,7 @@ header {
 
 .main-picture .title-box p {
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 28.27px;
   letter-spacing: 0.02em;
   text-align: left;
@@ -321,14 +317,14 @@ header {
 
 .app-section .title-box h1 {
   text-align: left;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
 }
 
 .app-section .title-box p {
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
@@ -354,8 +350,9 @@ header {
   color: var(--secondary-color);
 }
 .products2 h1 {
-  margin-left: 0;
-  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  font-weight: 400;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
@@ -422,14 +419,13 @@ header {
 }
 
 .copy-block h1 {
-  margin-left: 0;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 24px;
   line-height: 36px;
 }
 
 .copy-block p {
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
 }
@@ -446,5 +442,175 @@ header {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+
+/* FORMS BOX */
+
+.forms-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 64px 80px;
+  gap: 40px;
+  background-color: var(--secondary-color);
+  width: 100%;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 32px;
+  background-color: var(--primary-color);
+  border-radius: 24px;
+  width: 100%;
+}
+
+.forms .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  color: var(--secondary-color);
+  width: 100%;
+}
+
+.forms .text-box h1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.forms .text-box .subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  width: 100%;
+  text-align: left;
+}
+
+.forms .text-box .description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: 100%;
+  text-align: left;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 18px;
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 18px;
+  width: 100%;
+}
+
+.inputs input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px 10px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  border: none;
+}
+
+.security {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  width: 100%;
+  flex: 1;
+}
+
+.security h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: left;
+}
+
+.security .sum {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+}
+
+.values {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+
+.values2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 24px;
+  gap: 24px;
+  background: #dfdcd5;
+  border-radius: 8px;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.86px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #7d26c9;
+}
+
+.security input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: none;
+}
+
+.forms button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 40px;
+  background: #dfbbfe;
+  opacity: 0.5;
+  border-radius: 4px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border: none;
   cursor: pointer;
 }
