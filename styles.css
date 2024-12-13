@@ -458,11 +458,18 @@ header {
 .forms-box {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 4rem 5rem;
   gap: 2.5rem;
+  /* AJUSTAR PARA DIFERENTES TELAS */
   background-color: var(--secondary-color);
   width: 100%;
+}
+
+.forms-box img {
+  width: 30%;
+  /* AJUSTAR PARA DIFERENTES TELAS */
 }
 
 .forms {
@@ -555,6 +562,7 @@ header {
   font-size: 1.5rem;
   line-height: 2.25rem;
   text-align: left;
+  /* AJUSTAR PARA TELAS MENORES */
 }
 
 .security .sum {
