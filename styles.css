@@ -345,6 +345,7 @@ header {
   align-items: center;
   padding: 0;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 /* PRODUCTS2 SECTION */
@@ -666,6 +667,10 @@ footer {
   align-items: center;
   padding: 0;
   gap: 2.5rem;
+}
+
+.social img {
+  cursor: pointer;
 }
 
 .infos {
