@@ -171,8 +171,8 @@ header {
 }
 
 .products-grid {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   padding: 0;
   gap: 1.5rem;
@@ -358,7 +358,7 @@ header {
   padding: 0;
   gap: 1.5rem;
 }
-.frame3 div {
+.frame3 li {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -375,6 +375,7 @@ header {
   line-height: 1.875rem;
   color: #7d26c9;
   cursor: pointer;
+  list-style: none;
 }
 
 /* CARD SECTION */
@@ -449,8 +450,8 @@ header {
   width: 100%;
 }
 
-.forms-box img {
-  width: 30%;
+.forms-computer-img {
+  width: 25%;
   /* AJUSTAR PARA DIFERENTES TELAS */
 }
 
@@ -526,6 +527,9 @@ header {
   background: #ffffff;
   border-radius: 0.5rem;
   border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .security {
@@ -592,6 +596,10 @@ header {
   background: #ffffff;
   border-radius: 0.5rem;
   border: none;
+  flex: 1;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .forms button {
@@ -685,3 +693,76 @@ footer {
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1768px) {
+  /* GRIDS MAIORES NOS PRODUTOS */
+  /* AUMENTAR APP SECTION */
+}
+
+@media (max-width: 1024px) {
+  /* PRODUCTS */
+
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* GALLERY */
+
+  .simple-gallery {
+    grid-template-columns: 1fr;
+  }
+  .secondary-pics {
+    gap: 1.5rem;
+  }
+
+  /* FORMS BOX */
+
+  .forms-computer-img {
+    width: 50%;
+  }
+
+  .forms-box {
+    flex-direction: column;
+  }
+
+  .security {
+    flex-direction: column;
+  }
+
+  .security h1 {
+    width: 100%;
+    text-align: left;
+  }
+
+  /* FOOTER */
+
+  .infos .categories {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  /* PRODUCTS */
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FORMS BOX */
+
+  .forms-computer-img {
+    width: 100%;
+  }
+
+  .form-fields {
+    flex-direction: column;
+  }
+}
+
+/* RESULTADO NA MESMA LINHA DA SOMA */
+/* INPUTS ESTAO MUITO FINOS, DEVERIAM ESTAR MAIS GROSSOS */
+/* AO PREENCHER TRANSICIONAR O BOTÃO PARA CLICÁVEL */
+/* VERIFICAÇÃO DE SEGURANÇA QUEBRA EM 1370PX */
+/* HERO PARA TABLETS E CELULARES, SUBSTITUIR IMAGEM?, MUDAR HEADER */
