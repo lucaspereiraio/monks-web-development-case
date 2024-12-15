@@ -18,16 +18,22 @@ body {
 }
 
 /* HERO SECTION */
-
-.hero-lp {
+.hero-content {
   color: var(--primary-color);
   background-color: var(--secondary-color);
   border-radius: 0 0 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-lp {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+  max-width: 1768px;
   overflow: hidden;
 }
 
@@ -131,9 +137,20 @@ header {
   z-index: 2;
 }
 
+/* MID BG */
+
+.mid-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* PRODUCTS SECTION */
 
 .products {
+  width: 100%;
+  max-width: 1768px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,6 +240,8 @@ header {
 /* GALLERY SECTION */
 
 .simple-gallery {
+  width: 100%;
+  max-width: 1768px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
@@ -276,12 +295,13 @@ header {
 /* APP SECTION */
 
 .app-section {
+  width: 100%;
+  max-width: 1768px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 2rem 5rem 4rem;
-  gap: 1.5rem;
   border-radius: 2rem 2rem 0 0;
 }
 
@@ -289,6 +309,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding: 2.5rem;
   gap: 2.5rem;
   background-color: #3c0c60;
@@ -332,6 +353,8 @@ header {
 /* PRODUCTS2 SECTION */
 
 .products2 {
+  width: 100%;
+  max-width: 1768px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,6 +404,8 @@ header {
 /* CARD SECTION */
 
 .card-section {
+  width: 100%;
+  max-width: 1768px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -436,9 +461,21 @@ header {
   cursor: pointer;
 }
 
+/* BOTTOM CONTENT */
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+
 /* FORMS BOX */
 
 .forms-box {
+  width: 100%;
+  max-width: 1768px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -632,6 +669,8 @@ header {
 /* DIV SECTION */
 
 .div {
+  width: 100%;
+  max-width: 1768px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -648,6 +687,8 @@ header {
 /* FOOTER SECTION */
 
 footer {
+  width: 100%;
+  max-width: 1768px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -750,9 +791,13 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 1768px) {
-  /* GRIDS MAIORES NOS PRODUTOS */
-  /* AUMENTAR APP SECTION */
+@media (min-width: 1450px) {
+  .hero-text {
+    flex: 1 1 80%;
+  }
+  .logo-image {
+    flex: 1 1 20%;
+  }
 }
 
 @media (max-width: 1024px) {
