@@ -25,6 +25,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero-lp {
@@ -116,16 +117,17 @@ header {
   flex-wrap: wrap;
 }
 
-.scroll {
+.hero-scroll {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
 }
 
 .logo-image {
   position: relative;
   flex: 1 1 40%;
-  /* MUDAR EM  TELAS MAIORES E MENORES*/
 }
 .purple-logo {
   position: absolute;
@@ -188,6 +190,7 @@ header {
 }
 
 .products-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
@@ -219,6 +222,7 @@ header {
   padding: 0 0.5rem;
   gap: 0.5rem;
   color: var(--ternary-color);
+  width: 100%;
 }
 
 .card-title {
@@ -235,6 +239,7 @@ header {
   font-size: 1.25rem;
   line-height: 1.875rem;
   flex-grow: 1;
+  width: 100%;
 }
 
 /* GALLERY SECTION */
@@ -482,7 +487,6 @@ header {
   align-items: center;
   padding: 4rem 5rem;
   gap: 2.5rem;
-  /* AJUSTAR PARA DIFERENTES TELAS */
   background-color: var(--secondary-color);
   width: 100%;
 }
@@ -565,8 +569,8 @@ header {
   border-radius: 0.5rem;
   border: none;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 
 .security {
@@ -588,7 +592,7 @@ header {
   /* AJUSTAR PARA TELAS MENORES */
 }
 
-.security .sum {
+.sum {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -800,7 +804,26 @@ footer {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1372px) {
+  .security {
+    flex-direction: column;
+  }
+  .security h1 {
+    width: 100%;
+    text-align: left;
+  }
+  .sum {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* HERO SECTION */
+
+  .hero-content {
+    border-radius: 0;
+  }
+
   /* PRODUCTS */
 
   .products-grid {
@@ -814,12 +837,6 @@ footer {
   }
   .secondary-pics {
     gap: 1.5rem;
-  }
-
-  /* APP SECTION */
-
-  .app-section .info-box {
-    flex-direction: column;
   }
 
   /* CARD SECTION */
@@ -838,15 +855,6 @@ footer {
     flex-direction: column;
   }
 
-  .security {
-    flex-direction: column;
-  }
-
-  .security h1 {
-    width: 100%;
-    text-align: left;
-  }
-
   /* FOOTER */
 
   .infos .categories {
@@ -854,11 +862,195 @@ footer {
   }
 }
 
+@media (max-width: 767px) {
+  /* HERO LP  */
+
+  .hero-text {
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  .text-box-hero {
+    padding: 3rem 2rem 1.5rem 1.5rem;
+    flex: 1 1 65%;
+  }
+
+  .hero {
+    gap: 0;
+  }
+
+  .hero-text {
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  .logo-image {
+    flex: 1 1 35%;
+  }
+
+  /* PRODUCTS */
+  .products {
+    padding: 2rem 1.5rem;
+  }
+
+  /* SIMPLE GALLERY */
+
+  .simple-gallery {
+    padding: 2rem 1.5rem;
+  }
+
+  /* APP SECTION */
+  .app-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .app-section .info-box {
+    flex-direction: column;
+  }
+
+  .app-buttons {
+    width: 100%;
+  }
+
+  .app-buttons img {
+    width: 100%;
+  }
+
+  /* PRODUCTS2 */
+
+  .products2 {
+    padding: 2rem 1.5rem;
+  }
+
+  /* CARD SECTION */
+
+  .card-section {
+    padding: 2rem 1.5rem;
+  }
+
+  /* FORMS BOX*/
+  .forms-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .security input {
+    width: 100%;
+  }
+
+  /* DIV SECTION */
+
+  .div {
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  /* FOOTER SECTION */
+
+  footer {
+    padding: 1.5rem;
+  }
+}
+
 @media (max-width: 480px) {
+  /* HERO LP */
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.78rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.126rem;
+  }
+
   /* PRODUCTS */
 
   .products-grid {
     grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .frame {
+    width: 100%;
+  }
+
+  .title-box-products h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .title-box-products p {
+    font-size: 1rem;
+    line-height: 1.18rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    width: 100%;
+  }
+
+  .card-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+
+  /* SIMPLE GALLERY */
+
+  .title-box-gallery h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .title-box-gallery p {
+    font-size: 1rem;
+    line-height: 1.18rem;
+  }
+
+  /* APP SECTION */
+
+  .title-box-app h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .title-box-app p {
+    font-size: 1rem;
+    line-height: 1.18rem;
+  }
+
+  /* PRODUCTS2 */
+
+  .products2 h1 {
+    font: bolder;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .frame3 {
+    gap: 1rem;
+  }
+
+  .frame3 li {
+    padding: 0.5rem 1.5rem;
+    gap: 0.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* CARD SECTION */
+
+  .card-section {
+    gap: 1rem;
+  }
+
+  .copy-block h1 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .copy-block p {
+    font-size: 1rem;
+    line-height: 1.18rem;
   }
 
   /* FORMS BOX */
@@ -867,17 +1059,77 @@ footer {
     width: 100%;
   }
 
+  .text-box-forms h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .text-box-forms .subtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .form-fields {
     flex-direction: column;
   }
+
+  .inputs input {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .security {
+    gap: 1rem;
+  }
+
+  .security h1 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .sum {
+    gap: 1rem;
+  }
+
+  .values {
+    gap: 0.5rem;
+  }
+
+  .values2 {
+    gap: 0.5rem;
+    padding: 0.72rem 0.5rem;
+  }
+
+  .value {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .security input {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* FOOTER SECTION */
+
+  .infos {
+    gap: 1rem;
+  }
+
+  .infos .categories {
+    gap: 1rem;
+  }
+
+  .infos .categories li {
+    font-size: 1rem;
+    line-height: 1.18rem;
+  }
 }
 
-/* RESULTADO NA MESMA LINHA DA SOMA */
-/* INPUTS ESTAO MUITO FINOS, DEVERIAM ESTAR MAIS GROSSOS */
-/* AO PREENCHER TRANSICIONAR O BOTÃO PARA CLICÁVEL */
-/* VERIFICAÇÃO DE SEGURANÇA QUEBRA EM 1370PX */
 /* HERO PARA TABLETS E CELULARES, SUBSTITUIR IMAGEM?, MUDAR HEADER */
 /* HOVER CATEGORY */
 /* .categories li:hover {
   list-style: circle;
 } */
+
+/* ARRUMAR HERO SCROOLL TAMANHO */
