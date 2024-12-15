@@ -31,7 +31,7 @@ body {
   overflow: hidden;
 }
 
-.text-box {
+.text-box-hero {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -57,7 +57,7 @@ header {
   cursor: pointer;
 }
 
-.categories {
+.header-categories {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,7 +66,7 @@ header {
   list-style: none;
 }
 
-.categories li {
+.header-categories li {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -116,17 +116,17 @@ header {
   align-items: center;
 }
 
-.image {
+.logo-image {
   position: relative;
   flex: 1 1 40%;
   /* MUDAR EM  TELAS MAIORES E MENORES*/
 }
-.image .purple-logo {
+.purple-logo {
   position: absolute;
   z-index: 1;
 }
 
-.image .pink-logo {
+.pink-logo {
   position: absolute;
   z-index: 2;
 }
@@ -141,7 +141,7 @@ header {
   gap: 2.5rem;
 }
 
-.products .title-box {
+.title-box-products {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -150,7 +150,7 @@ header {
   width: 100%;
 }
 
-.products .title-box h1 {
+.title-box-products h1 {
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 2.935rem;
@@ -160,7 +160,7 @@ header {
   text-decoration-skip-ink: none;
 }
 
-.products .title-box p {
+.title-box-products p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.75rem;
@@ -243,7 +243,7 @@ header {
   justify-content: space-between;
 }
 
-.main-picture .title-box {
+.title-box-gallery {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -251,14 +251,14 @@ header {
   color: var(--secondary-color);
 }
 
-.main-picture .title-box h1 {
+.title-box-gallery h1 {
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 2.9375rem;
   letter-spacing: 0.02em;
 }
 
-.main-picture .title-box p {
+.title-box-gallery p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.75rem;
@@ -295,7 +295,7 @@ header {
   border-radius: 1.5rem;
 }
 
-.app-section .title-box {
+.title-box-app {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -304,7 +304,7 @@ header {
   color: var(--primary-color);
 }
 
-.app-section .title-box h1 {
+.title-box-app h1 {
   text-align: left;
   font-weight: 400;
   font-size: 2.5rem;
@@ -312,14 +312,14 @@ header {
   letter-spacing: 0.02em;
 }
 
-.app-section .title-box p {
+.title-box-app p {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.75rem;
   letter-spacing: 0.02em;
 }
 
-.buttons {
+.app-buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -466,7 +466,7 @@ header {
   width: 100%;
 }
 
-.forms .text-box {
+.forms .text-box-forms {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -476,7 +476,7 @@ header {
   width: 100%;
 }
 
-.forms .text-box h1 {
+.forms .text-box-forms h1 {
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 2.9375rem;
@@ -484,7 +484,7 @@ header {
   text-align: left;
 }
 
-.forms .text-box .subtitle {
+.forms .text-box-forms .subtitle {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -492,7 +492,7 @@ header {
   text-align: left;
 }
 
-.forms .text-box .description {
+.forms .text-box-forms .description {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.1875rem;
@@ -692,6 +692,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  list-style: none;
   padding: 0px;
   gap: 2.5rem;
 }
