@@ -92,7 +92,7 @@ header {
 
 .header-categories li:hover {
   list-style: disc;
-  list-style-position: outside;
+  list-style-position: inside;
 }
 
 .hero {
