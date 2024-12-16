@@ -260,7 +260,6 @@ picture {
   border: none;
   outline: none;
   cursor: pointer;
-  /* justify-self: center; */
 }
 
 /* MID CONTENT */
@@ -1278,6 +1277,3 @@ footer {
     flex-direction: column;
   }
 }
-
-/* IMPLEMENTAR TRNASPARENCY */
-/* CATEGORIA 4 QUEBRANDO NO HEADER, MAIOR QUE O CONTAINER */
