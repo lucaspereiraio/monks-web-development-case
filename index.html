@@ -27,9 +27,9 @@
                   <li>Categoria 3</li>
                   <li>Categoria 4</li>
                 </ul>
-                <button class="go-back" id="goBack">
+                <dbutton class="go-back" id="goBack">
                   <img src="assets/go-back.svg" alt="Go back image" />
-                </button>
+                </dbutton>
                 <div class="transparency"></div>
               </div>
             </nav>
@@ -60,16 +60,28 @@
           </div>
         </div>
         <div class="logo-image">
-          <img
-            src="/assets/logos-monks-pink.png"
-            alt="pink logo monks in loop"
-            class="pink-logo"
-          />
-          <img
-            src="/assets/logos-monks-purple.png"
-            alt="purple logo monks in loop"
-            class="purple-logo"
-          />
+          <picture>
+            <source
+              srcset="/assets/pink-mobile.png"
+              media="(max-width: 480px)"
+            />
+            <img
+              src="/assets/logos-monks-pink.png"
+              alt="pink logos monks cascade"
+              class="pink-logo"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="/assets/purple-mobile.png"
+              media="(max-width: 480px)"
+            />
+            <img
+              src="/assets/logos-monks-purple.png"
+              alt="purple logo monks cascade"
+              class="purple-logo"
+            />
+          </picture>
         </div>
       </section>
     </div>

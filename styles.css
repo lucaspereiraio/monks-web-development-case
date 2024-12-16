@@ -46,7 +46,6 @@ body {
   align-items: flex-start;
   padding: 1.5rem 0 1.5rem 5rem;
   flex: 1 1 60%;
-  /* MUDAR EM  TELAS MAIORES E MENORES*/
 }
 
 header {
@@ -89,6 +88,11 @@ header {
   /* padding: 0 0.625rem; */
   cursor: pointer;
   flex-shrink: 0;
+}
+
+.header-categories li:hover {
+  list-style: disc;
+  list-style-position: inside;
 }
 
 .hero {
@@ -138,6 +142,11 @@ header {
   position: relative;
   flex: 1 1 40%;
 }
+
+picture {
+  display: inline-block;
+}
+
 .purple-logo {
   position: absolute;
   z-index: 101;
@@ -213,7 +222,7 @@ header {
   display: none;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1.5rem 1.5rem 5rem 2.5rem;
+  padding: 1.5rem 1.5rem 5rem 6rem;
   width: 100%;
 }
 
@@ -239,13 +248,15 @@ header {
 }
 
 .go-back[open] {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .go-back img {
   border: none;
   outline: none;
   cursor: pointer;
+  /* justify-self: center; */
 }
 
 .transparency {
@@ -983,97 +994,7 @@ footer {
   }
 }
 
-@media (max-width: 767px) {
-  /* HERO LP  */
-
-  .header-main {
-    padding: 1rem 1.5rem;
-  }
-
-  .hero-text {
-    padding: 1rem 0 1.5rem 0;
-  }
-
-  .text-box-hero {
-    padding: 3rem 2rem 1.5rem 1.5rem;
-    flex: 1 1 65%;
-  }
-
-  .hero {
-    gap: 0;
-  }
-
-  .hero-text {
-    padding: 1rem 0 1.5rem 0;
-  }
-
-  .logo-image {
-    flex: 1 1 35%;
-  }
-
-  /* PRODUCTS */
-  .products {
-    padding: 2rem 1.5rem;
-  }
-
-  /* SIMPLE GALLERY */
-
-  .simple-gallery {
-    padding: 2rem 1.5rem;
-  }
-
-  /* APP SECTION */
-  .app-section {
-    padding: 2rem 1.5rem;
-  }
-
-  .app-section .info-box {
-    flex-direction: column;
-  }
-
-  .app-buttons {
-    width: 100%;
-  }
-
-  .app-buttons img {
-    width: 100%;
-  }
-
-  /* PRODUCTS2 */
-
-  .products2 {
-    padding: 2rem 1.5rem;
-  }
-
-  /* CARD SECTION */
-
-  .card-section {
-    padding: 2rem 1.5rem;
-  }
-
-  /* FORMS BOX*/
-  .forms-box {
-    padding: 2rem 1.5rem;
-  }
-
-  .security input {
-    width: 100%;
-  }
-
-  /* DIV SECTION */
-
-  .div {
-    padding: 1.5rem 1.5rem 0;
-  }
-
-  /* FOOTER SECTION */
-
-  footer {
-    padding: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 881px) {
   /* HERO LP */
 
   .hero-text h1 {
@@ -1087,15 +1008,6 @@ footer {
   }
 
   /* PRODUCTS */
-
-  .products-grid {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-
-  .frame {
-    width: 100%;
-  }
 
   .title-box-products h1 {
     font-size: 1.5rem;
@@ -1180,10 +1092,6 @@ footer {
 
   /* FORMS BOX */
 
-  .forms-computer-img {
-    width: 100%;
-  }
-
   .text-box-forms h1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -1192,10 +1100,6 @@ footer {
   .text-box-forms .subtitle {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .form-fields {
-    flex-direction: column;
   }
 
   .inputs input {
@@ -1251,16 +1155,135 @@ footer {
   }
 }
 
-/* HERO PARA TABLETS E CELULARES, SUBSTITUIR IMAGEM?, MUDAR HEADER */
-/* HOVER CATEGORY */
-/* .categories li:hover {
-  list-style: circle;
-} */
+@media (max-width: 767px) {
+  /* HERO LP  */
+
+  .header-main {
+    padding: 1rem 1.5rem;
+  }
+
+  .mobile-header-categories {
+    padding: 1.5rem 1.5rem 5rem 2.5rem;
+  }
+
+  .hero-text {
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  .text-box-hero {
+    padding: 3rem 2rem 1.5rem 1.5rem;
+  }
+
+  .hero {
+    gap: 0;
+  }
+
+  .hero-text {
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  .logo-image {
+    left: -5rem;
+  }
+
+  /* PRODUCTS */
+  .products {
+    padding: 2rem 1.5rem;
+  }
+
+  /* SIMPLE GALLERY */
+
+  .simple-gallery {
+    padding: 2rem 1.5rem;
+  }
+
+  /* APP SECTION */
+  .app-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .app-section .info-box {
+    flex-direction: column;
+  }
+
+  .app-buttons {
+    width: 100%;
+  }
+
+  .app-buttons img {
+    width: 100%;
+  }
+
+  /* PRODUCTS2 */
+
+  .products2 {
+    padding: 2rem 1.5rem;
+  }
+
+  /* CARD SECTION */
+
+  .card-section {
+    padding: 2rem 1.5rem;
+  }
+
+  /* FORMS BOX*/
+  .forms-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .security input {
+    width: 100%;
+  }
+
+  /* DIV SECTION */
+
+  .div {
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  /* FOOTER SECTION */
+
+  footer {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* HERO SECTION */
+
+  .logo-image {
+    flex: 1;
+    top: -1rem;
+    /* left: -4rem; */
+  }
+
+  .hero-scroll img {
+    width: 20%;
+  }
+  /* PRODUCTS */
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .frame {
+    width: 100%;
+  }
+
+  /* FORMS BOX */
+
+  .forms-computer-img {
+    width: 100%;
+  }
+
+  .form-fields {
+    flex-direction: column;
+  }
+}
 
 /* ARRUMAR HERO SCROOLL TAMANHO */
 /* COLOCAR O BACK DENTRO DO BOTÃO */
 /* IMPLEMENTAR TRNASPARENCY */
-/* HOVER CATEGORY INSIDE LIST STYLE */
-/* IMAGEM LOGO PARA MOBILES */
-/* LOGO 100%RESPONSIVO */
+/* CATEGORIA 4 QUEBRANDO NO HEADER, MAIOR QUE O CONTAINER */
 /* HEADER DESAPARECER COM O SCROLL baixo e cima */
