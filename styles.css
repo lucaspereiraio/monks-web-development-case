@@ -92,7 +92,7 @@ header {
 
 .header-categories li:hover {
   list-style: disc;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 .hero {
@@ -140,6 +140,7 @@ header {
 
 .logo-image {
   position: relative;
+  top: -1rem;
   flex: 1 1 40%;
 }
 
@@ -167,18 +168,21 @@ picture {
   top: 0;
   left: 0;
   z-index: 100;
+  transition: transform 0.3s ease;
 }
 
 .mobile-header[open] {
   z-index: 200;
 }
 
+.mobile-header.hidden {
+  transform: translateY(-100%);
+}
+
 .mobile-navbar {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* width: 100vw; */
-  /* height: 100vh; */
 }
 
 .mobile-navbar[open] {
@@ -260,6 +264,7 @@ picture {
 }
 
 .transparency {
+  display: flex;
   flex: 1;
   background-color: var(--secondary-color) / 60;
 }
@@ -1253,8 +1258,6 @@ footer {
 
   .logo-image {
     flex: 1;
-    top: -1rem;
-    /* left: -4rem; */
   }
 
   .hero-scroll img {
@@ -1282,8 +1285,6 @@ footer {
   }
 }
 
-/* ARRUMAR HERO SCROOLL TAMANHO */
-/* COLOCAR O BACK DENTRO DO BOTÃO */
 /* IMPLEMENTAR TRNASPARENCY */
 /* CATEGORIA 4 QUEBRANDO NO HEADER, MAIOR QUE O CONTAINER */
-/* HEADER DESAPARECER COM O SCROLL baixo e cima */
+/* HEADER COM IMAGEM QUEBRADA */

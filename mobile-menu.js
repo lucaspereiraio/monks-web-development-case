@@ -1,4 +1,5 @@
-const mobileHeader = document.querySelector(".mobile-header");
+//Abertura do menu mobile
+// const mobileHeader = document.querySelector(".mobile-header");
 const mobileNavBar = document.querySelector(".mobile-navbar");
 const headerMain = document.querySelector(".header-main");
 const menuBurger = document.querySelector(".menu-burger");
@@ -37,4 +38,27 @@ closeMenu.addEventListener("click", () => {
   mobileMenu.removeAttribute("open");
   mobileHeaderCategories.removeAttribute("open");
   goBack.removeAttribute("open");
+});
+
+//Aparição do header de acordo com o scroll
+
+let lastScrollY = window.scrollY;
+
+// const isMenuOpen = mobileHeader.hasAttribute("open");
+
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+  const isMenuOpen = headerMain.hasAttribute("open");
+
+  if (!isOpen) {
+    if (currentScrollY > lastScrollY) {
+      // Rolando pra baixo
+      headerMain.classList.add("hidden");
+    } else {
+      // Rolando pra cima
+      headerMain.classList.remove("hidden");
+    }
+  }
+
+  lastScrollY = currentScrollY;
 });
