@@ -42,19 +42,18 @@ closeMenu.addEventListener("click", () => {
 
 //Aparição do header de acordo com o scroll
 let lastScrollY = window.scrollY;
-const threshold = 1000;
 
-const isMenuOpen = mobileHeader.hasAttribute("open");
+const isMenuOpen = () => mobileHeader.hasAttribute("open");
 
 window.addEventListener("scroll", () => {
   const currentScrollY = window.scrollY;
 
-  if (!isMenuOpen && Math.abs(currentScrollY - lastScrollY) > threshold) {
+  if (!isMenuOpen()) {
     if (currentScrollY > lastScrollY) {
-      // Rolando pra baixo
+      // Rolando para baixo
       mobileHeader.classList.add("hidden");
-    } else {
-      // Rolando pra cima
+    } else if (currentScrollY < lastScrollY) {
+      // Rolando para cima
       mobileHeader.classList.remove("hidden");
     }
   }
