@@ -11,7 +11,31 @@
     <div class="hero-content">
       <section class="hero-lp">
         <div class="text-box-hero">
-          <header>
+          <!-- HEADER MOBILE -->
+          <header class="mobile-header" id="mobileHeader">
+            <nav class="mobile-navbar">
+              <div class="header-main">
+                <img src="/assets/logo.svg" alt=".monk logo" class="logo" />
+                <button class="menu-burger" id="menuBurger">
+                  <img src="/assets/menu-burger.svg" alt="Mobile menu button" />
+                </button>
+              </div>
+              <div class="mobile-menu" id="mobileMenu">
+                <ul class="mobile-header-categories">
+                  <li>Categoria 1</li>
+                  <li>Categoria 2</li>
+                  <li>Categoria 3</li>
+                  <li>Categoria 4</li>
+                </ul>
+                <button class="go-back" id="goBack">
+                  <img src="assets/go-back.svg" alt="Go back image" />
+                </button>
+                <div class="transparency"></div>
+              </div>
+            </nav>
+          </header>
+          <!-- DESKTOP HEADER -->
+          <header class="desktop-header">
             <nav class="navbar">
               <img src="/assets/logo.svg" alt=".monk logo" class="logo" />
               <ul class="header-categories">
@@ -35,7 +59,6 @@
             </div>
           </div>
         </div>
-        <!-- MOBILE HEADER AQUI!!! -->
         <div class="logo-image">
           <img
             src="/assets/logos-monks-pink.png"
@@ -270,4 +293,5 @@
     </div>
   </body>
   <script src="/form-validation.js"></script>
+  <script src="/mobile-menu.js"></script>
 </html>

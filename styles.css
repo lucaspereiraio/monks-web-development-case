@@ -29,6 +29,7 @@ body {
 }
 
 .hero-lp {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -52,6 +53,14 @@ header {
   width: 100%;
 }
 
+.desktop-header {
+  display: flex;
+}
+
+.mobile-header {
+  display: none;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -60,7 +69,7 @@ header {
   flex-wrap: nowrap;
 }
 
-.navbar .logo {
+.logo {
   cursor: pointer;
 }
 
@@ -131,15 +140,120 @@ header {
 }
 .purple-logo {
   position: absolute;
-  z-index: 1;
+  z-index: 101;
 }
 
 .pink-logo {
   position: absolute;
-  z-index: 2;
+  z-index: 102;
 }
 
-/* MID BG */
+/* MOBILE HEADER */
+
+.mobile-header {
+  color: var(--primary-color);
+  width: 100%;
+  background-color: #dfbbfe;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.mobile-header[open] {
+  z-index: 200;
+}
+
+.mobile-navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* width: 100vw; */
+  /* height: 100vh; */
+}
+
+.mobile-navbar[open] {
+  height: 100vh;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem 1rem 5rem;
+  background-color: var(--secondary-color);
+}
+
+.header-main[open] {
+  border-radius: 0 0 1rem 1rem;
+}
+
+.menu-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-menu[open] {
+  display: flex;
+}
+
+.mobile-header-categories {
+  display: none;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 1.5rem 5rem 2.5rem;
+  width: 100%;
+}
+
+.mobile-header-categories[open] {
+  display: flex;
+}
+
+.mobile-header-categories li {
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  list-style-position: inside;
+  cursor: pointer;
+}
+
+.go-back {
+  display: none;
+  padding-bottom: 2.5rem;
+  border: none;
+  background-color: inherit;
+  width: 100%;
+}
+
+.go-back[open] {
+  display: block;
+}
+
+.go-back img {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.transparency {
+  flex: 1;
+  background-color: var(--secondary-color) / 60;
+}
+
+/* MID CONTENT */
 
 .mid-content {
   display: flex;
@@ -758,7 +872,7 @@ footer {
   border-radius: 0.5rem;
   font-size: 1rem;
   color: var(--primary-color);
-  z-index: 100;
+  z-index: 1000;
   box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
   opacity: 0.9;
   animation: fade-in 0.5s ease, fade-out 0.5s ease 2.5s;
@@ -819,6 +933,13 @@ footer {
 
 @media (max-width: 1023px) {
   /* HERO SECTION */
+  .mobile-header {
+    display: flex;
+  }
+
+  .desktop-header {
+    display: none;
+  }
 
   .hero-content {
     border-radius: 0;
@@ -864,6 +985,10 @@ footer {
 
 @media (max-width: 767px) {
   /* HERO LP  */
+
+  .header-main {
+    padding: 1rem 1.5rem;
+  }
 
   .hero-text {
     padding: 1rem 0 1.5rem 0;
@@ -1133,3 +1258,9 @@ footer {
 } */
 
 /* ARRUMAR HERO SCROOLL TAMANHO */
+/* COLOCAR O BACK DENTRO DO BOTÃO */
+/* IMPLEMENTAR TRNASPARENCY */
+/* HOVER CATEGORY INSIDE LIST STYLE */
+/* IMAGEM LOGO PARA MOBILES */
+/* LOGO 100%RESPONSIVO */
+/* HEADER DESAPARECER COM O SCROLL baixo e cima */
