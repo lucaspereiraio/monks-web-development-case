@@ -41,22 +41,21 @@ closeMenu.addEventListener("click", () => {
 });
 
 //Aparição do header de acordo com o scroll
-
 let lastScrollY = window.scrollY;
+const threshold = 1000;
 
-// const isMenuOpen = mobileHeader.hasAttribute("open");
+const isMenuOpen = mobileHeader.hasAttribute("open");
 
 window.addEventListener("scroll", () => {
   const currentScrollY = window.scrollY;
-  const isMenuOpen = headerMain.hasAttribute("open");
 
-  if (!isOpen) {
+  if (!isMenuOpen && Math.abs(currentScrollY - lastScrollY) > threshold) {
     if (currentScrollY > lastScrollY) {
       // Rolando pra baixo
-      headerMain.classList.add("hidden");
+      mobileHeader.classList.add("hidden");
     } else {
       // Rolando pra cima
-      headerMain.classList.remove("hidden");
+      mobileHeader.classList.remove("hidden");
     }
   }
 

@@ -195,6 +195,7 @@ picture {
   gap: 1rem;
   padding: 1rem 1.5rem 1rem 5rem;
   background-color: var(--secondary-color);
+  width: 100%;
 }
 
 .header-main[open] {
@@ -208,6 +209,7 @@ picture {
   background-color: var(--secondary-color);
   border: none;
   cursor: pointer;
+  z-index: 2000;
 }
 
 .mobile-menu {
@@ -1287,4 +1289,3 @@ footer {
 
 /* IMPLEMENTAR TRNASPARENCY */
 /* CATEGORIA 4 QUEBRANDO NO HEADER, MAIOR QUE O CONTAINER */
-/* HEADER COM IMAGEM QUEBRADA */
